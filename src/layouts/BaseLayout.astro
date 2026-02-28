@@ -3,6 +3,7 @@
 // The frame. Every page on the site uses this.
 
 import '../styles/global.css';
+import Nav from '../components/common/Nav.astro';
 
 interface Props {
   title: string;
@@ -53,6 +54,7 @@ const siteName = 'Joseph Lilleberg';
 
   <body>
     <!-- Page content fills the slot -->
+    <Nav />
     <slot />
 
     <!-- Dark mode script -->
