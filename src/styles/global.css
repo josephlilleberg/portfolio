@@ -83,7 +83,7 @@
   --color-surface: #0a0a0a;
   --color-text: #f5f5f5;
   --color-text-muted: #a1a1aa;
-  --color-border: #1f1f1f;
+  --color-border: #555555;
   --color-accent: #0eb8a0;
 }
 
@@ -115,6 +115,9 @@ body {
   transition:
     background-color var(--transition-base),
     color var(--transition-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============================================================
@@ -136,6 +139,10 @@ p {
   font-family: var(--font-body);
   line-height: var(--leading-body);
   color: var(--color-text);
+}
+
+main {
+  flex: 1;
 }
 
 code,
